@@ -1,0 +1,7 @@
+Hello, 
+<%= @user.firstname %>  
+<%= @user.lastname %><br>
+<%= @user.email %>  <br>
+<%= @user.password %> <br>
+<%= link_to "Edit profile", edit_user_path(@user.id) %> <br>
+<%= link_to "Delete profile", user_path(@user.id), metod: :delete %>
